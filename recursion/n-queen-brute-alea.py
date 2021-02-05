@@ -74,7 +74,7 @@ def Founder(N, iters):
 				b.remove(b[0])	
 		if isSol(val) == True:
 			print('solution found at iteration %d!\n\n%s\n\n' %(i, val));
-			i = 10001;
+			i = iters + 1;
 			return val;
 		else:
 			i += 1;
@@ -82,3 +82,5 @@ def Founder(N, iters):
 Founder(5,10000);
 Founder(8,10000);
 
+# I think it's proved that for N > 4, there's always
+# a solution! (maybe not easy to find at all ....)
